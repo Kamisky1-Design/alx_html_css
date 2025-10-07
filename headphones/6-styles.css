@@ -1,0 +1,377 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  position: relative;
+  background: url('image/headphones_hero_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Navigation */
+nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  top: -80px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #FF6565;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  padding: 80px 10%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.what-we-do p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.service {
+  flex: 1 1 200px;
+  max-width: 220px;
+}
+
+.service span {
+  font-size: 50px;
+  color: #FF6565;
+  display: inline-block;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.service span:hover {
+  transform: scale(1.1);
+}
+
+/* Our Results Section */
+.our-results {
+  position: relative;
+  background: url('image/headphones_hero_2.jpg') no-repeat center center/cover;
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.results-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 80px 10%;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.our-results h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.our-results p {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #ddd;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+/* Start of updated code for Task 6 */
+
+/* Remove this `.circle` rule */
+/*
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #FF6565;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.circle h3 {
+  font-size: 1.3rem;
+  color: white;
+}
+*/
+
+/* Add the new .pentagon styles */
+.our-results .stats .pentagon {
+  width: 157.5px;
+  height: 150px;
+  background-color: #ff6565;
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto 10px;
+}
+
+.our-results .stats .pentagon h3 {
+  font-size: 1.3rem;
+  color: white;
+}
+/* End of updated code for Task 6 */
+
+/* Contact Us Section */
+.contact-us {
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-us p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #FF6565;
+}
+
+.contact-form button {
+  background: #FF6565;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons span {
+  font-size: 25px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons span:hover {
+  color: #FF6565;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* -------------------------------
+   Holberton Icon Font Integration
+---------------------------------- */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon.woff2') format('woff2'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype'),
+       url('fonts/holberton_school-icon.svg#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Social Media Icons */
+.holberton_school-icon-ic_facebook::before {
+  content: "\e908";
+}
+
+.holberton_school-icon-ic_twitter::before {
+  content: "\e90f";
+}
+
+.holberton_school-icon-ic_instagram::before {
+  content: "\e90a";
+}
+
